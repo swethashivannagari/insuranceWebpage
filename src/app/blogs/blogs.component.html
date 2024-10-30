@@ -1,0 +1,16 @@
+<div class="bg-gray-100 shadow-sm p-8 lg:px-32 mx-auto py-4 ">
+<h4 class="text-teal-600 text-xs font-semibold text-center mt-4">  BLOGS AND NEWS</h4>
+<h2 class="text-4xl font-bold lg:w-1/2 mx-auto px-5 text-center my-3">Better Digital Insurance begins Right Here</h2>
+<div class="grid px-8 mx-3 my-8 md:grid-cols-3 gap-6">
+    <div *ngFor="let blog of blogs">
+        <div class="relative ">
+        <img [src]="blog.image" alt={{blog.title}} class="w-full h-60 rounded-lg">
+        <div class=" absolute bottom-0 right-3 bg-teal-600 py-2 px-3 rounded text-white text-xs font-semibold">{{blog.date}}</div>
+    </div>
+        <p class="text-gray-600 text-xs mt-5">{{blog.subtitle}}</p>
+        <h4 class="text-2xl font-bold">{{blog.title}}</h4>
+        <button class="border border-teal-600 px-5 py-2 rounded my-3 text-teal-600 hover:cursor-pointer">Read More</button>
+    </div>
+
+</div>
+</div>

@@ -1,0 +1,75 @@
+<div class="py-10 px-8 lg:px-32 m-auto text-center">
+    <h4 class="text-teal-600 text-xs font-semibold">EXPERT TEAM</h4>
+    <h2 class="text-4xl font-bold text-gray-800 my-2 w-1/2 mx-auto ">Meet Our Team Expert & Experience Members</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-8 my-8 mx-3">
+        <div *ngFor="let member of teamMembers" class="bg-white shadow-md">
+            <img [src]="member.image" alt="Team member photo" class="w-full h-60">
+            <div class="p-4 text-left">
+                <h3 class="font-semibold text-lg">{{ member.name }}</h3>
+                <p class="text-gray-500">{{ member.role }}</p>
+                <div class="flex justify-start items-start mt-4">
+                    <a href="#" *ngFor="let icon of member.socials" class=" cursor-pointer">
+
+                        <img [src]="icon" alt="" class="w-6">
+
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-gray-600">Lorem ipsum Tenetur, labore 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nihil corporis molestiae mollitia enim saepe nobis quae assumenda,
+        distinctio deleniti voluptates nobis maxime doloribus a unde delectus modi in, fugiat deserunt rerum voluptas, ab at neque aliquid omnis!</p>
+</div>
+<div  class="bg-teal-700 container mt-6 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 py-10 px-8 lg:px-40 m-auto">
+    <div class="flex gap-6  ">
+        <!--card1-->
+        <div class="flex flex-col">
+            <div class=" bg-white shadow-md py-6 px-4 rounded">
+                <img src="../../assets/coperateWomen.jpeg" alt="women" class="w-24 h-24 rounded-full mb-4 ">
+                <div class="flex my-2">
+                    <img src="../../assets/star.png" alt="" class="w-3">
+                    <img src="../../assets/star.png" alt="" class="w-3">
+                    <img src="../../assets/star.png" alt="" class="w-3">
+                    <img src="../../assets/star.png" alt="" class="w-3">
+                    <img src="../../assets/star.png" alt="" class="w-3">
+                    </div>
+                <p>Lorem ipsum dolor  nam architecto animi,  voluptatum hic deserunt.  voluptatum hic deserunt Consequuntur, enim.</p>
+                <h2 class="text-xl font-bold">Manika Selvan</h2>
+                <p class="text-teal-600 ">Marketing Ex.</p>
+            </div>
+            <div class="bg-white my-4 p-2 ml-10 rounded-lg">
+                <div class="flex my-2">
+                    <img src="../../assets/star.png" alt="" class="w-3">
+                    <img src="../../assets/star.png" alt="" class="w-3">
+                    <img src="../../assets/star.png" alt="" class="w-3">
+                    <img src="../../assets/star.png" alt="" class="w-3">
+                    <img src="../../assets/star.png" alt="" class="w-3">
+                    </div>
+                    <p class="text-gray-600">Average 4.6 from 1200+ review of our customers.</p>
+            </div>
+
+        </div>
+        <div class=" bg-white shadow-md py-6 px-4 rounded my-auto">
+            <img src="../../assets/coperateMen.jpeg" alt="men" class="w-24 h-24 rounded-full mb-4 ">
+            <div class="flex my-2">
+                <img src="../../assets/star.png" alt="" class="w-3">
+                <img src="../../assets/star.png" alt="" class="w-3">
+                <img src="../../assets/star.png" alt="" class="w-3">
+                <img src="../../assets/star.png" alt="" class="w-3">
+                <img src="../../assets/star.png" alt="" class="w-3">
+                </div>
+            <p>Lorem ipsum dolor  nam architecto animi,enni voluptatum hic deserunt. voluptatum hic deserunt Consequuntur, enim.</p>
+            <h2 class="text-xl font-bold">Jhun Selvan</h2>
+            <p class="text-teal-600 ">Marketing Ex.</p>
+        </div>
+    </div>
+    <div class="text-white text-center lg:text-left my-16 md:ml-16 mx-auto">
+    <h4 class=" text-xs font-semibold ">OUR REVIEW</h4>
+    <h2 class=" text-4xl font-bold  my-2  mx-auto ">What they say about us honest reviews</h2>
+    <p class=" my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste suscipit aliquam voluptatem ipsum voluptatum ex voluptatibus ducimus quidem aspernatur itaque.</p>
+    <button class="my-2 bg-teal-600  px-4 py-2 rounded hover:cursor-pointer">>View More</button>
+</div>
+
+</div>
